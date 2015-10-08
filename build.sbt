@@ -4,6 +4,9 @@ version := "1.0"
 
 scalaVersion := "2.11.7"
 
+// Disabling name hashing fixes the issue
+//incOptions := incOptions.value.withNameHashing(false)
+
 libraryDependencies += "org.scalaz" %% "scalaz-core" % "7.1.0"
 
 libraryDependencies += "net.databinder" %% "unfiltered-netty" % "0.8.2"
